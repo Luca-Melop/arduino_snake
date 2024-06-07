@@ -1,0 +1,297 @@
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <title>Highscore</title>
+      <link rel="stylesheet" href="style.css" />
+	   <script src="https://unpkg.com/grandeur-js"></script>
+   </head>
+
+   <body>
+
+      <p id="data" style="visibility=hidden;"></p>
+	   <button onclick="input()">call function</button>
+
+
+      <h1>Highscore Tetris</h1>
+      <div class="matrix">
+         <!-- 1st -->
+         <div class="off" id="101"></div>
+         <!-- first number = column / two second numbers = row -->
+         <div class="off" id="102"></div>
+         <!-- made atuomatically with macro on mouse (Logitech G-Hub) -->
+         <div class="off" id="103"></div>
+         <!-- class="off" = dark pixel / class="on" = red pixel -->
+         <div class="off" id="104"></div>
+         <div class="off" id="105"></div>
+         <div class="off" id="106"></div>
+         <div class="off" id="107"></div>
+         <div class="off" id="108"></div>
+         <div class="off" id="109"></div>
+         <div class="off" id="110"></div>
+         <div class="off" id="111"></div>
+         <div class="off" id="112"></div>
+         <div class="off" id="113"></div>
+         <div class="off" id="114"></div>
+         <div class="off" id="115"></div>
+         <div class="off" id="116"></div>
+         <div class="off" id="117"></div>
+         <div class="off" id="118"></div>
+         <div class="off" id="119"></div>
+         <div class="off" id="120"></div>
+         <div class="off" id="121"></div>
+         <div class="off" id="122"></div>
+         <div class="off" id="123"></div>
+         <div class="off" id="124"></div>
+         <div class="off" id="125"></div>
+         <div class="off" id="126"></div>
+         <div class="off" id="127"></div>
+         <div class="off" id="128"></div>
+         <div class="off" id="129"></div>
+         <div class="off" id="130"></div>
+         <div class="off" id="131"></div>
+         <div class="off" id="132"></div>
+
+         <!-- 2st -->
+         <div class="off" id="201"></div>
+         <div class="off" id="202"></div>
+         <div class="off" id="203"></div>
+         <div class="off" id="204"></div>
+         <div class="off" id="205"></div>
+         <div class="off" id="206"></div>
+         <div class="off" id="207"></div>
+         <div class="off" id="208"></div>
+         <div class="off" id="209"></div>
+         <div class="off" id="210"></div>
+         <div class="off" id="211"></div>
+         <div class="off" id="212"></div>
+         <div class="off" id="213"></div>
+         <div class="off" id="214"></div>
+         <div class="off" id="215"></div>
+         <div class="off" id="216"></div>
+         <div class="off" id="217"></div>
+         <div class="off" id="218"></div>
+         <div class="off" id="219"></div>
+         <div class="off" id="220"></div>
+         <div class="off" id="221"></div>
+         <div class="off" id="222"></div>
+         <div class="off" id="223"></div>
+         <div class="off" id="224"></div>
+         <div class="off" id="225"></div>
+         <div class="off" id="226"></div>
+         <div class="off" id="227"></div>
+         <div class="off" id="228"></div>
+         <div class="off" id="229"></div>
+         <div class="off" id="230"></div>
+         <div class="off" id="231"></div>
+         <div class="off" id="232"></div>
+
+         <!-- 3st -->
+         <div class="off" id="301"></div>
+         <div class="off" id="302"></div>
+         <div class="off" id="303"></div>
+         <div class="off" id="304"></div>
+         <div class="off" id="305"></div>
+         <div class="off" id="306"></div>
+         <div class="off" id="307"></div>
+         <div class="off" id="308"></div>
+         <div class="off" id="309"></div>
+         <div class="off" id="310"></div>
+         <div class="off" id="311"></div>
+         <div class="off" id="312"></div>
+         <div class="off" id="313"></div>
+         <div class="off" id="314"></div>
+         <div class="off" id="315"></div>
+         <div class="off" id="316"></div>
+         <div class="off" id="317"></div>
+         <div class="off" id="318"></div>
+         <div class="off" id="319"></div>
+         <div class="off" id="320"></div>
+         <div class="off" id="321"></div>
+         <div class="off" id="322"></div>
+         <div class="off" id="323"></div>
+         <div class="off" id="324"></div>
+         <div class="off" id="325"></div>
+         <div class="off" id="326"></div>
+         <div class="off" id="327"></div>
+         <div class="off" id="328"></div>
+         <div class="off" id="329"></div>
+         <div class="off" id="330"></div>
+         <div class="off" id="331"></div>
+         <div class="off" id="332"></div>
+
+         <!-- 4st -->
+         <div class="off" id="401"></div>
+         <div class="off" id="402"></div>
+         <div class="off" id="403"></div>
+         <div class="off" id="404"></div>
+         <div class="off" id="405"></div>
+         <div class="off" id="406"></div>
+         <div class="off" id="407"></div>
+         <div class="off" id="408"></div>
+         <div class="off" id="409"></div>
+         <div class="off" id="410"></div>
+         <div class="off" id="411"></div>
+         <div class="off" id="412"></div>
+         <div class="off" id="413"></div>
+         <div class="off" id="414"></div>
+         <div class="off" id="415"></div>
+         <div class="off" id="416"></div>
+         <div class="off" id="417"></div>
+         <div class="off" id="418"></div>
+         <div class="off" id="419"></div>
+         <div class="off" id="420"></div>
+         <div class="off" id="421"></div>
+         <div class="off" id="422"></div>
+         <div class="off" id="423"></div>
+         <div class="off" id="424"></div>
+         <div class="off" id="425"></div>
+         <div class="off" id="426"></div>
+         <div class="off" id="427"></div>
+         <div class="off" id="428"></div>
+         <div class="off" id="429"></div>
+         <div class="off" id="430"></div>
+         <div class="off" id="431"></div>
+         <div class="off" id="432"></div>
+
+         <!-- 5st -->
+         <div class="off" id="501"></div>
+         <div class="off" id="502"></div>
+         <div class="off" id="503"></div>
+         <div class="off" id="504"></div>
+         <div class="off" id="505"></div>
+         <div class="off" id="506"></div>
+         <div class="off" id="507"></div>
+         <div class="off" id="508"></div>
+         <div class="off" id="509"></div>
+         <div class="off" id="510"></div>
+         <div class="off" id="511"></div>
+         <div class="off" id="512"></div>
+         <div class="off" id="513"></div>
+         <div class="off" id="514"></div>
+         <div class="off" id="515"></div>
+         <div class="off" id="516"></div>
+         <div class="off" id="517"></div>
+         <div class="off" id="518"></div>
+         <div class="off" id="519"></div>
+         <div class="off" id="520"></div>
+         <div class="off" id="521"></div>
+         <div class="off" id="522"></div>
+         <div class="off" id="523"></div>
+         <div class="off" id="524"></div>
+         <div class="off" id="525"></div>
+         <div class="off" id="526"></div>
+         <div class="off" id="527"></div>
+         <div class="off" id="528"></div>
+         <div class="off" id="529"></div>
+         <div class="off" id="530"></div>
+         <div class="off" id="531"></div>
+         <div class="off" id="532"></div>
+
+         <!-- 6st -->
+         <div class="off" id="601"></div>
+         <div class="off" id="602"></div>
+         <div class="off" id="603"></div>
+         <div class="off" id="604"></div>
+         <div class="off" id="605"></div>
+         <div class="off" id="606"></div>
+         <div class="off" id="607"></div>
+         <div class="off" id="608"></div>
+         <div class="off" id="609"></div>
+         <div class="off" id="610"></div>
+         <div class="off" id="611"></div>
+         <div class="off" id="612"></div>
+         <div class="off" id="613"></div>
+         <div class="off" id="614"></div>
+         <div class="off" id="615"></div>
+         <div class="off" id="616"></div>
+         <div class="off" id="617"></div>
+         <div class="off" id="618"></div>
+         <div class="off" id="619"></div>
+         <div class="off" id="620"></div>
+         <div class="off" id="621"></div>
+         <div class="off" id="622"></div>
+         <div class="off" id="623"></div>
+         <div class="off" id="624"></div>
+         <div class="off" id="625"></div>
+         <div class="off" id="626"></div>
+         <div class="off" id="627"></div>
+         <div class="off" id="628"></div>
+         <div class="off" id="629"></div>
+         <div class="off" id="630"></div>
+         <div class="off" id="631"></div>
+         <div class="off" id="632"></div>
+
+         <!-- 7st -->
+         <div class="off" id="701"></div>
+         <div class="off" id="702"></div>
+         <div class="off" id="703"></div>
+         <div class="off" id="704"></div>
+         <div class="off" id="705"></div>
+         <div class="off" id="706"></div>
+         <div class="off" id="707"></div>
+         <div class="off" id="708"></div>
+         <div class="off" id="709"></div>
+         <div class="off" id="710"></div>
+         <div class="off" id="711"></div>
+         <div class="off" id="712"></div>
+         <div class="off" id="713"></div>
+         <div class="off" id="714"></div>
+         <div class="off" id="715"></div>
+         <div class="off" id="716"></div>
+         <div class="off" id="717"></div>
+         <div class="off" id="718"></div>
+         <div class="off" id="719"></div>
+         <div class="off" id="720"></div>
+         <div class="off" id="721"></div>
+         <div class="off" id="722"></div>
+         <div class="off" id="723"></div>
+         <div class="off" id="724"></div>
+         <div class="off" id="725"></div>
+         <div class="off" id="726"></div>
+         <div class="off" id="727"></div>
+         <div class="off" id="728"></div>
+         <div class="off" id="729"></div>
+         <div class="off" id="730"></div>
+         <div class="off" id="731"></div>
+         <div class="off" id="732"></div>
+
+         <!-- 8st -->
+         <div class="off" id="801"></div>
+         <div class="off" id="802"></div>
+         <div class="off" id="803"></div>
+         <div class="off" id="804"></div>
+         <div class="off" id="805"></div>
+         <div class="off" id="806"></div>
+         <div class="off" id="807"></div>
+         <div class="off" id="808"></div>
+         <div class="off" id="809"></div>
+         <div class="off" id="810"></div>
+         <div class="off" id="811"></div>
+         <div class="off" id="812"></div>
+         <div class="off" id="813"></div>
+         <div class="off" id="814"></div>
+         <div class="off" id="815"></div>
+         <div class="off" id="816"></div>
+         <div class="off" id="817"></div>
+         <div class="off" id="818"></div>
+         <div class="off" id="819"></div>
+         <div class="off" id="820"></div>
+         <div class="off" id="821"></div>
+         <div class="off" id="822"></div>
+         <div class="off" id="823"></div>
+         <div class="off" id="824"></div>
+         <div class="off" id="825"></div>
+         <div class="off" id="826"></div>
+         <div class="off" id="827"></div>
+         <div class="off" id="828"></div>
+         <div class="off" id="829"></div>
+         <div class="off" id="830"></div>
+         <div class="off" id="831"></div>
+         <div class="off" id="832"></div>
+      </div>
+   </body>
+   
+
+   <script src="digit_codes.js"></script>
+   <script src="main.js"></script>
+</html>
