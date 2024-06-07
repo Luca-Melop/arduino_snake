@@ -4,8 +4,8 @@
 
 
 // WiFi credentials --> my HotSPot
-const char* ssid = "lucaarduino";
-const char* passphrase = "42069420";
+const char* ssid = "secret";
+const char* passphrase = "secret";
 
 // Grandeur credentials --> removed so no one can see it
 const char * apiKey = "";
