@@ -1,2 +1,3 @@
 # arduino_snake
-gameconsol with many features running snake
+school project: gameconsol with many features
+The documentation is attached (see pdf)
